@@ -6,9 +6,57 @@ body{
     margin: 0 125px 0 125px;
 
 }
+/*Styling for overall tags such as headings, grid creation, img adjustments etc*/
+h1{
+    grid-column: 1/ span 12;
+    text-align: center;
+}
 
-section{
+
+img{
+    object-fit: cover;
+    width: 100%;
+}
+
+    /*Grid Layout and Span styles*/
+.grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
 }
+
+.four_col_span{
+    grid-column: span 4;
+}
+
+.six_col_span{
+    grid-column: span 6;
+}
+
+
+/* Hero Section Styling*/
+.hero{
+    grid-column: 3 / 11;
+    text-align: center;
+}
+
+
+/*Our Work Section Styling*/
+
+
+
+/*Main Services Styling*/
+
+
+/*About Us*/
+
+.span_col_3_11{
+    grid-column: 3 / 11;
+}
+
+
+
+
+
+
+
