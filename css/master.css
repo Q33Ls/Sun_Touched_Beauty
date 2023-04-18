@@ -56,6 +56,13 @@ img{
 
 
 
+/*Contact Us styling Section*/
+.contact_p{
+    grid-column: 1/ span 12;
+    text-align: center;
+}
+
+
 
 
 
