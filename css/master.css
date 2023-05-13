@@ -98,6 +98,56 @@ img{
     text-align: center;
 }
 
+/* Form Styling */
+form {
+    grid-column:4/10;
+    background-color: #45a049;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-group {
+    text-align: center;
+    padding: 5px;
+
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    justify-content: center;
+}
+
+textarea {
+    height: 100px;
+}
+
+button[type="submit"] {
+    grid-column: span 12;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
 
 
 
