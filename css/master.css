@@ -1,15 +1,25 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     box-sizing: border-box;
+    margin: 0;
 }
 
 body{
     margin: 0 125px 0 125px;
+    font-family: 'Playfair Display', serif;
 
 }
 /*Styling for overall tags such as headings, grid creation, img adjustments etc*/
 h1{
     grid-column: 1/ span 12;
     text-align: center;
+    font-family: 'Style Script', cursive;
+    font-size: 4rem;
+    margin: 0;
+
 }
 
 
@@ -23,6 +33,7 @@ img{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
+    padding-bottom: 2rem;
 }
 
 .four_col_span{
@@ -45,16 +56,21 @@ img{
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
-    padding: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.50rem;
+    padding: 20px;
 }
 
 .navbar a{
     text-decoration: none;
     color: inherit;
+
 }
 
 .logo{
     margin-right: 50px;
+    font-family: 'Style Script', cursive;
+    font-size: 1.70rem;
 }
 
 .list{
@@ -69,7 +85,7 @@ img{
 }
 
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 1028px){
     .menu{
         width: 100%;
         max-height: 0;
@@ -93,9 +109,61 @@ img{
     }
 }
 /* Hero Section Styling*/
+
+.hero p{
+    font-size: 1.5rem;
+    padding: 1em;
+    width: 75%;
+
+}
+
 .hero{
     grid-column: 3 / 11;
     text-align: center;
+    height: calc(100vh - 71px); /* Set the height to 80% of the viewport height */
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.welcome-h1{
+    font-size: 5vw;
+}
+
+
+/*Main Services Styling*/
+h4{
+    text-align: center;
+    padding: 1em;
+    font-size: 1.5rem;
+    padding-top: 0;
+}
+
+/*About Us*/
+.about_us_sect{
+    text-align: center;
+}
+
+.about_us_sect img{
+    width: 50%;
+    border-radius: 50%;
+}
+
+.about_us_sect p{
+    font-size: 1.2rem;
+    line-height: 2;
+}
+.about-p1{
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.about-p2{
+    padding: 2rem;
+
 }
 
 /* Form Styling */
@@ -156,7 +224,7 @@ button[type="submit"]:hover {
 
 
 
-/*Main Services Styling*/
+
 
 
 /*About Us*/
@@ -229,6 +297,8 @@ button[type="submit"]:hover {
 /*Footer*/
 footer{
     display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
 }
 
 
