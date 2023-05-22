@@ -11,7 +11,7 @@ body{
     margin: 0 125px 0 125px;
     font-family: 'Playfair Display', serif;
     background: rgb(251,255,177);
-    background: linear-gradient(0deg, rgba(251,255,177,1) 0%, rgba(253,220,173,1) 30%, rgba(255,191,169,1) 75%, rgba(255,194,194,1) 100%);
+    background: linear-gradient(0deg, rgba(251,255,177,1) 25%, rgba(255,235,180,1) 40%, rgba(255,191,169,1) 75%, rgba(255,172,172,1) 100%);
 
 }
 /*Styling for overall tags such as headings, grid creation, img adjustments etc*/
@@ -23,7 +23,6 @@ h1{
     margin: 0;
 
 }
-
 
 img{
     object-fit: cover;
@@ -47,9 +46,6 @@ img{
 }
 
 /*Nav Bar and Header*/
-/* Add a black background color to the top navigation */
-
-
 
 /*Logo And NAV grid*/
 .navbar{
@@ -87,30 +83,6 @@ img{
     display: none;
 }
 
-
-@media screen and (max-width: 1028px){
-    .menu{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    .list{
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .navbar label{
-        display: inline-flex;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    #toggler:checked ~ .menu{
-        max-height: 100%;
-    }
-}
 /* Hero Section Styling*/
 
 .hero p{
@@ -169,10 +141,26 @@ h4{
 
 }
 
+.span_col_3_11{
+    grid-column: 3 / 11;
+}
+
+
+/*Contact Us styling Section*/
+.form{
+    grid-column: 3/11;
+}
+
+.contact_p{
+    grid-column: 1/ span 12;
+    text-align: center;
+    font-size: 1.35rem;
+}
+
 /* Form Styling */
 form {
     grid-column:4/10;
-    background-color:#D7CFFB;
+    background-color:#FFEBB4;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.25rem;
@@ -209,49 +197,21 @@ textarea {
 
 button[type="submit"] {
     grid-column: span 12;
-    background-color: #8FBC8F;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
+    font-size: 1.2rem;
+    width: 25%;
 }
 
 button[type="submit"]:hover {
     background-color: #45a049;
 }
 
-
-
-
-
-
-/*Our Work Section Styling*/
-
-
-
-
-
-
-/*About Us*/
-
-.span_col_3_11{
-    grid-column: 3 / 11;
-}
-
-
-
-/*Contact Us styling Section*/
-.form{
-    grid-column: 3/11;
-}
-
-.contact_p{
-    grid-column: 1/ span 12;
-    text-align: center;
-    font-size: 1.35rem;
-}
 
 /*Footer*/
 footer{
@@ -260,6 +220,188 @@ footer{
     padding: 10px;
 }
 
+.follow{
+    text-decoration: none;
+    font-family: 'Style Script', cursive;
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+
+/*Media Query Stylings*/
+
+/*Media Query styling for 1028W*/
+@media screen and (max-width: 1028px){
+    body{
+        margin: 0 75px 0 75px;
+    }
+
+    /*Nav Bar Changes*/
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+
+    h4{
+        font-size: 1.25rem;
+    }
+
+
+}
+
+@media screen and (max-width: 1280px){
+    .hero{
+        grid-column: 1/13;
+    }
+
+    .about-us-p{
+        grid-column: 1/13;
+    }
+
+   form{
+       grid-column: 3/11 ;
+
+   }
+}
+
+@media screen and (max-width: 768px){
+    .welcome-h1{
+        font-size: 5vw;
+    }
+
+    .four_col_span{
+        grid-column: span 6;
+    }
+
+    .center{
+        grid-column: 4/10;
+    }
+
+/*About Us Styling*/
+    .span_col_3_11{
+        grid-column: 1/13;
+    }
+
+    .about_us_sect p{
+        font-size: 1rem;
+    }
+
+
+/*Contact Us*/
+    .contact_p{
+        font-size: 1.15rem;
+    }
+
+
+    form{
+       grid-column: 2/12;
+        font-size: 1.15rem;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size:1.15rem ;
+    }
+
+    button[type="submit"]{
+        font-size: 1.15rem;
+    }
+
+
+}
+
+@media screen and (max-width:440px) {
+    body{
+        margin: 0 25px 0 25px;
+    }
+
+    h1{
+        font-size: 2.25rem;
+    }
+/*NavBar Styling*/
+    .navbar{
+        font-size: 1rem;
+    }
+
+/*Hero Styling*/
+    .welcome-h1{
+        font-size: 9vw;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+/*Our Work*/
+    .four_col_span{
+        grid-column: span 12;
+    }
+
+    .six_col_span{
+        grid-column: span 12;
+    }
+
+/*Main Services*/
+
+/*About Us*/
+    .span_col_3_11{
+        grid-column: span 12;
+    }
+
+/*Contact Us*/
+    .contact_p{
+        font-size: 1.15rem ;
+    }
+
+    form{
+        grid-column: 2/12;
+        font-size: 1rem;
+
+    }
+
+    input,
+    select,
+    textarea {
+        padding: 5px;
+        border-radius: 4px;
+        font-size: 1rem;
+    }
+
+    textarea {
+        height: 50px;
+    }
+
+    button[type="submit"] {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+
+    .label{
+        width: 75%;
+    }
+}
 
 
 
