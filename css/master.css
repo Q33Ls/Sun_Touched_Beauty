@@ -34,7 +34,7 @@ img{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 20px;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
 }
 
 .four_col_span{
@@ -95,14 +95,14 @@ img{
 .hero{
     grid-column: 3 / 11;
     text-align: center;
-    height: calc(100vh - 71px); /* Set the height to 80% of the viewport height */
     min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    padding-bottom: 0px;
 }
+
 
 .welcome-h1{
     font-size: 5vw;
@@ -306,7 +306,10 @@ footer{
     .about_us_sect p{
         font-size: 1rem;
     }
-
+    
+    .about_us_sect img{
+        width: 75%;
+    }
 
 /*Contact Us*/
     .contact_p{
@@ -327,6 +330,7 @@ footer{
 
     button[type="submit"]{
         font-size: 1.15rem;
+        width: 50%;
     }
 
 
@@ -354,6 +358,8 @@ footer{
         font-size: 1rem;
     }
 
+
+
 /*Our Work*/
     .four_col_span{
         grid-column: span 12;
@@ -368,6 +374,10 @@ footer{
 /*About Us*/
     .span_col_3_11{
         grid-column: span 12;
+    }
+
+    .about_us_sect img{
+        width: %;
     }
 
 /*Contact Us*/
@@ -396,12 +406,18 @@ footer{
     button[type="submit"] {
         padding: 5px 10px;
         font-size: 1rem;
+        width: 50%;
     }
 
     .label{
         width: 75%;
     }
-}
+
+    .follow{
+        font-size: 1.6rem;
+    }
+
+    
 
 
 
