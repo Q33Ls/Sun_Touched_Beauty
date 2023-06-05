@@ -3,156 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <title>Price List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/price_list.css">
+    <link rel="stylesheet" href="css/master.css">
+
 </head>
 <body>
+    <nav class="navbar">
+        <a href="#" class="logo">Sun Touched Beauty </a>
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><i class="fa-solid fa-bars"></i></label>
+        <div class="menu">
+            <ul class="list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="price_list.html">Price List</a></li>
+                <li><a href="#about_us">About Us</a></li>
+                <li><a href="#contact_us">Contact US</a></li>
+            </ul>
+        </div>
+ 
+    </nav>
     <div class="title">
-        <h1>Sun Touched Beauty</h1>
+        <h1>Price List</h1>
     </div>
-    <div class="waxing">
+    <div class="container">
+    <div class="waxing catergory">
         <table>
             <tr>
-                <th colspan="2">WAXING</th>
+                <th colspan="2" class="category_title"><h2>WAXING</h2></th>
             </tr>
             <tr>
-                <td>Eyebrows</td>
-                <td>R70</td>
+                <td class="product">Eyebrows</td>
+                <td class="price">R70</td>
             </tr>
             <tr>
-                <td>Brows & Tint</td>
-                <td>R100</td>
+                <td class="product">Brows & Tint</td>
+                <td class="price">R100</td>
             </tr>
             <tr>
-                <td>Lip</td>
-                <td>R30</td>
+                <td class="product">Lip</td>
+                <td class="price">R30</td>
             </tr>
             <tr>
-                <td>Chin</td>
-                <td>R30</td>
+                <td class="product">Chin</td>
+                <td class="price">R30</td>
             </tr>
             <tr>
-                <td>Sideburns</td>
-                <td>R60</td>
+                <td class="product">Sideburns</td>
+                <td class="price">R60</td>
             </tr>
             <tr>
-                <td>Undearms</td>
-                <td>R80</td>
+                <td class="product">Undearms</td>
+                <td class="price">R80</td>
             </tr>
         </table>
     </div>
 
-    <div class="Facials">
+    <div class="Facials catergory">
         <table>
             <tr>
-                <th colspan="2">FACIALS</th>
+                <th colspan="2" class="category_title"><h2>FACIALS</h2></th>
             </tr>
             <tr>
-                <td>Basic <br> (Cleanse, Exfoliate, Mask, Serum, Moisturise, Eye Cream)</td>
-                <td>R100</td>
+                <td class="product">Basic <br> (Cleanse, Exfoliate, Mask, Serum, Moisturise, Eye Cream)</td>
+                <td class="price">R100</td>
             </tr>
             <tr>
-                <td>Deluxe <br>(Cleanse, Exfoliate, Lumispa, Mask, Serum, Moisturise, Eye Cream)</td>
-                <td>R120</td>
+                <td class="product">Deluxe <br>(Cleanse, Exfoliate, Lumispa, Mask, Serum, Moisturise, Eye Cream)</td>
+                <td class="price">R120</td>
             </tr>
         </table>
     </div>
 
-    <div class="Mani">
+    <div class="Mani catergory">
         <table>
             <tr>
-                <th colspan="2">MANICURES</th>
+                <th colspan="2" class="category_title"><h2>MANICURES</h2></th>
             </tr>
             <tr>
-                <td>Basic Mani <br> (Cut, File, Cuticle Work, Buff)</td>
-                <td>R80</td>
+                <td class="product">Basic Mani <br> (Cut, File, Cuticle Work, Buff)</td>
+                <td class="price">R80</td>
             </tr>
             <tr>
-                <td>Deluxe Mani <br>(Soak, Exfoliate, Moisturise, Cut, File, Cuticle Work, Buff)</td>
-                <td>R100</td>
+                <td class="product">Deluxe Mani <br>(Soak, Exfoliate, Moisturise, Cut, File, Cuticle Work, Buff)</td>
+                <td class="price">R100</td>
             </tr>
             <tr>
-                <td>Add Ons:</td>
+                <td class="product">Add Ons:</td>
             </tr>
             <tr>
-                <td>Nail Polish</td>
-                <td>+ R20</td>
+                <td class="product">Nail Polish</td>
+                <td class="price">+R20</td>
             </tr>
             <tr>
-                <td>Gel Overlay</td>
-                <td>+R80</td>
+                <td class="product">Gel Overlay</td>
+                <td class="price">+R80</td>
             </tr>
         </table>
     </div>
 
-    <div class="Make-up">
+    <div class="Make-up catergory">
         <table>
             <tr>
-                <th colspan="2">MAKE UP</th>
+                <th colspan="2" class="category_title"><h2>MAKE UP</h2></th>
             </tr>
             <tr>
-                <td>Natural</td>
-                <td>R250</td>
+                <td class="product">Natural</td>
+                <td class="price">R250</td>
             </tr>
             <tr>
-                <td>Full Glam</td>
-                <td>R300</td>
+                <td class="product">Full Glam</td>
+                <td class="price">R300</td>
             </tr>
             <tr>
-                <td>False Eyelashes</td>
-                <td>R80</td>
+                <td class="product">False Eyelashes</td>
+                <td class="price">R80</td>
             </tr>
         </table>
     </div>
 
-    <div class="Pedi">
+    <div class="Pedi catergory">
         <table>
             <tr>
-                <th colspan="2">PEDICURES</th>
+                <th colspan="2" class="category_title"><h2>PEDICURES</h2></th>
             </tr>
             <tr>
-                <td>Mini Pedi <br> (Cut, File, Cuticle Work, Buff)</td>
-                <td>R80</td>
+                <td class="product">Mini Pedi <br> (Cut, File, Cuticle Work, Buff)</td>
+                <td class="price">R80</td>
             </tr>
             <tr>
-                <td>Full Pedi<br>(Callus Gel, Rasp, Soak, Exfoliate, Moisturise, Cut, File, Cuticle Work, Buff)</td>
-                <td>R180</td>
+                <td class="product">Full Pedi<br>(Callus Gel, Rasp, Soak, Exfoliate, Moisturise, Cut, File, Cuticle Work, Buff)</td>
+                <td class="price">R180</td>
             </tr>
             <tr>
-                <td>Medi Pedi <br>(Callus Gel, Rasp, Soak, Exfoliate, Moisturise)</td>
-                <td>R140</td>
+                <td class="product">Medi Pedi <br>(Callus Gel, Rasp, Soak, Exfoliate, Moisturise)</td>
+                <td class="price">R140</td>
             </tr>
             <tr>
-                <td>Add Ons:</td>
+                <td class="product">Add Ons:</td>
             </tr>
             <tr>
-                <td>Nail Polish</td>
-                <td>+ R20</td>
+                <td class="product">Nail Polish</td>
+                <td class="price">+R20</td>
             </tr>
             <tr>
-                <td>Gel Overlay</td>
-                <td>+R70</td>
+                <td class="product">Gel Overlay</td>
+                <td class="price">+R70</td>
             </tr>
             
         </table>
     </div>
 
-    <div class="nail-ext">
+    <div class="nail-ext catergory">
         <table>
             <tr>
-                <th colspan="2">Nail Extensions</th>
+                <th colspan="2" class="category_title"><h2>NAIL EXTENSIONS</h2></th>
             </tr>
             <tr>
-                <td>Acrylic</td>
-                <td>R300</td>
+                <td class="product">Acrylic</td>
+                <td class="price">R300</td>
             </tr>
             <tr>
-                <td>Acrylic + Gel Overlay</td>
-                <td>R350</td>
+                <td class="product">Acrylic + Gel Overlay</td>
+                <td class="price">R350</td>
             </tr>
             <tr>
-                <td>Soak Off</td>
-                <td>R80</td>
+                <td class="product">Soak Off</td>
+                <td class="price">R80</td>
             </tr>
         </table>
+    </div>
     </div>
 
 

@@ -1,0 +1,41 @@
+/*Title Styling*/
+
+
+/*Container and Table Formatting*/
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+tr{
+    width: 100%;
+}
+
+.catergory{
+    width: 50%;
+    padding: 15px;
+
+}
+table{
+    width: 100%;
+}
+
+h2{
+ padding: 10px;;  
+ background-color: rgba(255, 255, 255, 0.3);;
+ border-radius: 50px 50px 0px 0px;
+}
+
+.product{
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.price{
+    font-size: 1.5rem;
+    padding: 10px;
+}
